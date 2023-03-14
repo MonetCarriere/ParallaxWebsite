@@ -11,11 +11,76 @@
     <header>
         <a href="#" class="logo">Logo</a>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
+    <section>
+        <img src="stars3.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+       <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus
+        vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus
+        vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus
+        vero!<br><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur hic voluptatum, esse illum veritatis odio saepe
+        dignissimos vel officia aliquid, distinctio totam magnam cumque, quidem tenetur deleniti velit modi corporis rerum
+        quisquam. Adipisci eligendi qui veritatis, deleniti dicta magni, voluptates natus incidunt at necessitatibus
+        vero!<br><br>
+        </p>
+    </div>
+
+<script>
+
+let stars = document.getElementById("stars");
+let moon = document.getElementById("moon");
+let mountains_behind = document.getElementById("mountains_behind");
+let text = document.getElementById("text");
+let btn = document.getElementById("btn");
+let mountains_front = document.getElementById("mountains_front");
+    
+ window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 1.05 + 'px';
+    mountains_behind.style.top = value * 0.2 + 'px';
+    mountains_front.style.top = value * 0 + 'px';
+ })
+ 
+</script>
+
+
 </body>
 </html>
+
